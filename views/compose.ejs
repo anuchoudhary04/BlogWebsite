@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+
+<h1>Compose</h1>
+<form action="/compose" method="POST">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="composeTitle"></input> 
+        <!-- form-control and form-group are trhe classes of bootstarp to manage the size of input fields to max width -->
+        <label>Post</label>
+        <textarea rows=5 cols=30 class="form-control" name="composeBody"></textarea>
+    </div>
+    <button  class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+<%- include("partials/footer"); -%>
